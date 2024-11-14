@@ -3,6 +3,7 @@ import Layout from "./../components/Layout/Layout";
 import SupportAgentIcon from "@mui/icons-material/SupportAgent";
 import MailIcon from "@mui/icons-material/Mail";
 import CallIcon from "@mui/icons-material/Call";
+import Banner from "../images/banner.jpeg";
 import {
   Box,
   Paper,
@@ -17,19 +18,17 @@ import {
 
 const Contact = () => {
   return (
+    <div style={{ backgroundImage: `url(${Banner})` , color: "white"}}>
     <Layout>
       <Box sx={{ my: 5, ml: 10, "& h4": { fontWeight: "bold", mb: 2 } }}>
-        <Typography variant="h4">Contact My Resturant</Typography>
+        <Typography style={{ color: "black"}} variant="h2">Contact Depual Restaurant</Typography>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem odio
-          beatae ducimus magni nobis culpa praesentium velit expedita quae,
-          corrupti, pariatur inventore laboriosam consectetur modi impedit
-          error, repudiandae obcaecati doloribus.
+        The Contact page for DePaul Online Food Ordering is your go-to place for any questions, concerns, or feedback. Our dedicated support team is available to assist you with order issues, delivery inquiries, or menu recommendations. You can easily reach us via email, phone, or by filling out the contact form. We value your feedback and strive to improve your dining experience with every order. Whether you have a special request or need help navigating our site, we're here to ensure your satisfaction. Don't hesitate to get in touch—we look forward to hearing from you!
         </p>
       </Box>
       <Box
         sx={{
-          m: 3,
+          my: 11.5,
           width: "600px",
           ml: 10,
           "@media (max-width:600px)": {
@@ -71,6 +70,7 @@ const Contact = () => {
         </TableContainer>
       </Box>
     </Layout>
+    </div>
   );
 };
 

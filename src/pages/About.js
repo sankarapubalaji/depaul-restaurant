@@ -1,13 +1,15 @@
-import React from "react";
+import React, { useLayoutEffect } from "react";
 import Layout from "./../components/Layout/Layout";
 import { Box, Typography } from "@mui/material";
+import Banner from "../images/banner.jpeg";
 
 const About = () => {
   return (
+    <div className="home" style={{ backgroundImage: `url(${Banner})` , color: "white"}}>
     <Layout>
       <Box
         sx={{
-          my: 15,
+          my: 17,
           textAlign: "center",
           p: 2,
           "& h4": {
@@ -26,38 +28,21 @@ const About = () => {
           },
         }}
       >
-        <Typography variant="h4">Welcome To My Resturant</Typography>
+        <Typography style={{ color: "black"}} variant="h2">Welcome To Depual Resturant</Typography>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat quod,
-          suscipit, aperiam totam autem culpa cum eveniet dolorum quasi est
-          perspiciatis laborum. Nam recusandae nihil quia odio voluptatibus
-          facere omnis facilis rerum? Ab eum beatae nobis reiciendis, qui
-          temporibus aliquid, nesciunt velit sed quam recusandae necessitatibus,
-          tempora maxime. Repellendus incidunt, maxime labore dolorum eos
-          aperiam unde? At veritatis nesciunt eos quas cupiditate blanditiis est
-          quam maiores, amet, soluta exercitationem voluptatum, veniam
-          assumenda? Ratione perferendis officiis deserunt nostrum aspernatur
-          sed asperiores! Earum sunt placeat ducimus sint, deleniti amet esse
-          saepe voluptatem commodi laudantium quibusdam repellat nobis libero at
-          consectetur adipisci ipsa.
+        Welcome to DePaul Restaurant's online food ordering platform, designed specifically for our college community. Our website provides a convenient and efficient way to browse through a variety of menu options, place orders, and have your meals delivered right to your doorstep or ready for pick-up. You can explore a wide selection of dishes, ranging from comfort food to more diverse, contemporary options. Each dish is crafted with quality ingredients to ensure a satisfying dining experience. The platform is user-friendly, allowing you to easily customize your order, select add-ons, and choose from a variety of payment options. We aim to offer a quick and reliable service, making your mealtime simpler and more enjoyable. With DePaul's online ordering, you can enjoy fresh, delicious meals without the hassle of leaving campus. Simply place your order, and we’ll take care of the rest.
         </p>
         <br />
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
-          deserunt libero reprehenderit cum sint fugit cumque temporibus modi
-          facere eveniet amet obcaecati ducimus harum velit maxime vel qui
-          voluptatibus quam odio corrupti saepe, voluptas dolorum quidem
-          tempore? Esse sapiente molestias minus enim quisquam dolorum eum culpa
-          ullam impedit velit quo, corporis ducimus numquam dignissimos
-          inventore maiores. Nam deleniti itaque nostrum neque dolorum dolores,
-          aliquam, voluptatum sapiente doloribus laborum perspiciatis ipsam, quo
-          ut nisi distinctio sunt nihil est blanditiis perferendis eveniet
-          nesciunt! Nostrum, voluptatum eveniet repellat vel officia deleniti
-          tempore voluptatibus perferendis esse eaque temporibus porro?
-          Aspernatur beatae deleniti illo autem!
+        Our goal at DePaul Restaurant’s online ordering platform is to provide a seamless experience for busy students, faculty, and staff. Whether you're cramming for exams or just craving a delicious meal between classes, we’ve got you covered. With real-time order tracking, you’ll always know when to expect your meal, making it perfect for those on a tight schedule. You can also take advantage of exclusive student discounts and special promotions available only through our website. Every order is prepared with care, and we strive to ensure that your food arrives fresh and hot, just the way you like it. From pizza and pasta to healthy salads and snacks, there's something for every taste and dietary preference. Want to try something new? Check out our weekly specials for unique dishes that change regularly. Our efficient customer service team is always available to assist you with any questions or concerns. Plus, we offer contactless delivery and pick-up options for added convenience and safety. DePaul Restaurant is more than just a meal—it’s a solution for satisfying your hunger with ease and quality, right at your fingertips.
+        </p>
+        <br />
+        <p>
+        With DePaul Restaurant’s online platform, you can easily reorder your favorite meals with just a few clicks, saving you time for more important things. We also offer group ordering options, perfect for study sessions or campus events. Enjoy a fast, reliable, and personalized dining experience that fits seamlessly into your college life. Join the DePaul community and make every meal more convenient, enjoyable, and stress-free with just a few taps!
         </p>
       </Box>
     </Layout>
+    </div>
   );
 };
 
